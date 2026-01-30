@@ -1,0 +1,208 @@
+1. Define DevOps and explain its importance. Differentiate DevOps from Traditional IT.
+Definition of DevOps
+DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to improve collaboration, automation, and efficiency throughout the software delivery lifecycle.
+ Its main goal is to enable frequent, reliable, and faster delivery of software by breaking down silos between development and operations teams.
+Importance of DevOps
+Improves collaboration between development and operations teams
+
+
+Enables faster and more frequent software releases
+
+
+Reduces manual errors through automation
+
+
+Improves system reliability and stability
+
+
+Supports Continuous Integration and Continuous Delivery
+
+
+Helps organizations respond quickly to changing business needs
+
+
+Difference between Traditional IT and DevOps
+Traditional IT
+DevOps
+Development and Operations work in silos
+Dev and Ops work collaboratively
+Manual and slow deployments
+Automated and fast deployments
+Infrequent releases
+Continuous and frequent releases
+Reactive issue handling
+Proactive monitoring and feedback
+Long release cycles
+Short and efficient delivery cycles
+
+
+2. Explain CI/CD with diagram. Differentiate Continuous Delivery and Continuous Deployment.
+Continuous Integration (CI)
+Continuous Integration is the practice of frequently integrating code changes into a shared repository, followed by automated build and testing.
+ It helps detect defects early and ensures code quality.
+Continuous Delivery (CD)
+Continuous Delivery ensures that the software is always in a deployable state.
+ The deployment to production requires manual approval.
+CI/CD Pipeline Diagram (Textbook Style)
+Code Commit → Build → Test → Package → Deploy → Monitor → Feedback
+
+Difference between Continuous Delivery and Continuous Deployment
+Continuous Delivery
+Continuous Deployment
+Deployment requires manual approval
+Deployment is fully automated
+Safer for critical systems
+Faster release to users
+Human decision involved
+No human intervention
+Suitable for regulated environments
+Suitable for rapid delivery systems
+
+
+3. What is Jenkins? Explain Jenkins Pipeline with example.
+Jenkins
+Jenkins is an open-source automation server used to implement Continuous Integration and Continuous Delivery (CI/CD).
+ It automates building, testing, and deploying applications.
+Uses of Jenkins
+Automates software builds
+
+
+Executes automated tests
+
+
+Integrates with Git and Maven
+
+
+Deploys applications automatically
+
+
+Supports DevOps pipelines
+
+
+Jenkins Pipeline
+A Jenkins Pipeline is a set of automated steps written as code to define the CI/CD process.
+ It is stored in a file called Jenkinsfile.
+Sample Jenkins Pipeline (Declarative)
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        echo 'Building application'
+      }
+    }
+    stage('Test') {
+      steps {
+        echo 'Running tests'
+      }
+    }
+  }
+}
+
+
+4. Explain Git and Version Control. Differentiate Git Fetch and Git Pull.
+Version Control System
+A Version Control System (VCS) is used to track changes in source code, manage collaboration, and maintain history.
+Git
+Git is a distributed version control system that allows developers to work offline and manage code efficiently.
+Uses of Git
+Tracks code changes
+
+
+Supports collaboration
+
+
+Enables branching and merging
+
+
+Maintains history and rollback
+
+
+Difference between Git Fetch and Git Pull
+Git Fetch
+Git Pull
+Downloads changes from remote repository
+Downloads and merges changes
+Does not modify working directory
+Updates working directory
+Safer operation
+May cause merge conflicts
+
+
+5. Explain Maven. What is POM? Explain Maven Build Lifecycle.
+Maven
+Apache Maven is a build automation and project management tool mainly used for Java projects.
+Functions of Maven
+Manages dependencies
+
+
+Automates build process
+
+
+Generates documentation
+
+
+Executes tests
+
+
+POM (Project Object Model)
+POM is an XML file (pom.xml) that contains:
+Project information
+
+
+Dependencies
+
+
+Plugins
+
+
+Build configuration
+
+
+Maven Build Lifecycle Phases
+Validate
+
+
+Compile
+
+
+Test
+
+
+Package
+
+
+Verify
+
+
+Install
+
+
+Deploy
+
+
+
+6. Explain Scrum process with diagram.
+Scrum
+Scrum is an Agile framework used to manage and complete complex software projects using short iterations called sprints.
+Scrum Process
+Requirements are stored in Product Backlog
+
+
+Sprint Planning selects items for sprint
+
+
+Sprint lasts 2–4 weeks
+
+
+Daily Scrum meetings track progress
+
+
+Sprint Review and Retrospective improve process
+
+
+Scrum Process Diagram
+Product Backlog → Sprint Planning → Sprint
+      ↑                               ↓
+      ← Review ← Daily Scrum ← Increment
+
