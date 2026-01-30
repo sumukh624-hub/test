@@ -1,0 +1,299 @@
+1. Define DevOps. Explain its importance, objectives, and advantages.
+Definition
+
+DevOps is a combination of development (Dev) and operations (Ops) that represents a set of practices, cultural philosophies, and tools aimed at improving collaboration between software development and IT operations teams. The main goal of DevOps is to shorten the software development lifecycle, increase deployment frequency, and deliver high-quality, reliable software continuously.
+
+Importance of DevOps
+
+In traditional software development models, development, testing, and operations teams work in isolation. This siloed approach often leads to communication gaps, delayed releases, deployment failures, and slow feedback from users. DevOps overcomes these problems by promoting collaboration, automation, and shared responsibility, ensuring faster delivery and better alignment with business goals.
+
+Objectives of DevOps
+
+To enable faster and more frequent software releases
+
+To automate build, test, integration, and deployment
+
+To reduce manual errors and deployment failures
+
+To improve system stability and reliability
+
+To ensure continuous monitoring and feedback
+
+To enhance collaboration between teams
+
+Advantages of DevOps
+
+Faster time to market
+
+Improved collaboration between teams
+
+Higher software quality
+
+Reduced deployment failures
+
+Better customer satisfaction
+
+Faster detection and resolution of issues
+
+2. Explain the DevOps lifecycle in detail.
+
+The DevOps lifecycle represents the continuous and iterative process of software development, deployment, and monitoring.
+
+Phases of DevOps Lifecycle
+
+Planning – Requirements gathering, defining features, sprint planning, and roadmap creation
+
+Development – Writing, reviewing, and managing source code using version control systems
+
+Build – Compiling source code and resolving dependencies automatically
+
+Testing – Automated unit, integration, and functional testing to detect defects early
+
+Deployment – Releasing the application into production using automated pipelines
+
+Monitoring – Monitoring application performance, logs, and system health
+
+Feedback – Collecting user and system feedback to improve future releases
+
+The lifecycle is continuous, ensuring constant improvement and faster innovation.
+
+3. Differentiate DevOps and Traditional IT approach.
+Traditional IT Approach
+
+Development and operations teams work separately
+
+Deployment is mostly manual
+
+Long release cycles
+
+Errors are identified late
+
+Reactive problem handling
+
+DevOps Approach
+
+Development and operations teams work together
+
+Automated CI/CD pipelines
+
+Continuous delivery and deployment
+
+Early error detection
+
+Proactive monitoring and feedback
+
+Comparison Table
+Aspect	Traditional IT	DevOps
+Team Structure	Separate teams	Collaborative teams
+Deployment	Manual	Automated
+Release Cycle	Infrequent	Continuous
+Monitoring	Reactive	Proactive
+Feedback	Slow	Continuous
+4. Explain the key principles of DevOps.
+
+DevOps is built on several key principles that ensure speed, quality, and reliability:
+
+Collaboration – Encourages teamwork across development, testing, and operations
+
+Automation – Automates repetitive tasks like builds, tests, and deployments
+
+Continuous Integration (CI) – Frequent code integration into shared repositories
+
+Continuous Delivery (CD) – Software is always in a deployable state
+
+Continuous Monitoring – Real-time monitoring of applications and infrastructure
+
+Feedback – Continuous feedback for performance improvement
+
+5. Explain Continuous Integration (CI) and Continuous Delivery (CD) with diagram.
+Continuous Integration (CI)
+
+CI is the practice of frequently integrating code changes into a shared repository. Each integration is automatically built and tested, allowing teams to detect bugs early.
+
+Continuous Delivery (CD)
+
+CD ensures that the application is always in a deployable state. The deployment to production requires manual approval, making it suitable for regulated environments.
+
+CI/CD Diagram
+Code Commit → Build → Test → Package → Deploy → Monitor → Feedback
+
+Benefits of CI/CD
+
+Early bug detection
+
+Faster and reliable releases
+
+Reduced integration issues
+
+Improved software quality
+
+6. Differentiate Continuous Delivery and Continuous Deployment.
+Feature	Continuous Delivery	Continuous Deployment
+Deployment	Manual approval required	Fully automatic
+Risk Level	Lower	Higher
+Speed	Moderate	Very fast
+Usage	Regulated systems	Rapid delivery applications
+7. Explain Jenkins architecture and its role in DevOps.
+Jenkins
+
+Jenkins is an open-source automation server used to implement CI/CD pipelines in DevOps.
+
+Jenkins Architecture
+
+Jenkins Master – Manages jobs, schedules builds, and controls pipelines
+
+Jenkins Agents (Slaves) – Execute build, test, and deployment tasks
+
+Role of Jenkins in DevOps
+
+Automates build and testing processes
+
+Integrates with tools like Git, Maven, Docker, and Kubernetes
+
+Supports pipeline as code
+
+Enables continuous integration and deployment
+
+8. Explain Jenkins Pipeline in detail. Mention its types with example.
+Jenkins Pipeline
+
+A Jenkins Pipeline is a set of automated steps defined as code using a Jenkinsfile. It helps implement CI/CD workflows in a structured and repeatable manner.
+
+Types of Jenkins Pipeline
+
+Declarative Pipeline – Simple, readable, and structured
+
+Scripted Pipeline – Flexible and written using Groovy
+
+Multibranch Pipeline – Automatically builds multiple branches
+
+Example (Declarative Pipeline)
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps { echo 'Building' }
+    }
+    stage('Test') {
+      steps { echo 'Testing' }
+    }
+    stage('Deploy') {
+      steps { echo 'Deploying' }
+    }
+  }
+}
+
+9. Explain Git and Version Control System in detail.
+Version Control System (VCS)
+
+A VCS tracks changes in source code over time and allows multiple developers to collaborate efficiently.
+
+Git
+
+Git is a distributed version control system where every developer has a complete copy of the repository.
+
+Features of Git
+
+Branching and merging
+
+Offline work support
+
+Complete history tracking
+
+Strong collaboration support
+
+Easy rollback to previous versions
+
+10. Differentiate centralized and distributed version control systems.
+Centralized VCS	Distributed VCS
+Single central server	Multiple repositories
+Internet required	Works offline
+Example: SVN	Example: Git
+Higher failure risk	More reliable
+11. Explain branching and merging in Git.
+Branching
+
+Branching allows developers to create independent lines of development to work on new features or bug fixes without affecting the main code.
+
+Merging
+
+Merging combines changes from one branch into another, usually into the main branch.
+
+Advantages
+
+Parallel development
+
+Reduced conflicts
+
+Stable main branch
+
+12. Differentiate Git Fetch and Git Pull.
+Git Fetch	Git Pull
+Downloads changes only	Downloads and merges changes
+Safe operation	May cause conflicts
+No working directory change	Updates working directory
+13. Explain Maven architecture, POM, and repositories.
+Maven
+
+Maven is a build automation and dependency management tool mainly used for Java projects.
+
+Maven Architecture
+Developer → POM → Maven → Repository → Build
+
+POM (Project Object Model)
+
+POM is an XML file that contains project configuration, dependencies, plugins, and build settings.
+
+Repositories
+
+Local Repository – Stored on developer’s system
+
+Central Repository – Maintained by Maven community
+
+Remote Repository – Custom repositories (e.g., company servers)
+
+14. Explain Maven Build Lifecycle and its phases.
+
+The Maven build lifecycle defines the sequence of phases executed to build and deploy a project.
+
+Phases
+
+Validate
+
+Compile
+
+Test
+
+Package
+
+Verify
+
+Install
+
+Deploy
+
+Each phase performs a specific task automatically, ensuring consistency.
+
+15. Explain Scrum framework and Scrum process with diagram.
+Scrum
+
+Scrum is an Agile framework used to manage complex software projects using short iterations called sprints.
+
+Scrum Process
+
+Product Backlog – List of all requirements
+
+Sprint Planning – Selecting tasks for the sprint
+
+Sprint – 2–4 weeks of development
+
+Daily Scrum – Daily progress meeting
+
+Sprint Review – Review completed work
+
+Sprint Retrospective – Improve future sprints
+
+Scrum Diagram
+Product Backlog → Sprint Planning → Sprint
+        ↑                            ↓
+        ← Review ← Daily Scrum ← Increment
